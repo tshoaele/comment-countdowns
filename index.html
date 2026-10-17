@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Per-platform comment countdowns with a date-stamped log." />
+  <title>comment countdowns</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <meta name="theme-color" content="#141a22" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Eagle+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="card">
+    <h1>
+      comment countdowns
+      <span>20 each</span>
+    </h1>
+    <div class="subhead">per-platform · date-stamped log</div>
+
+    <div class="date-row">
+      <div class="day-label"><i>▸</i> today</div>
+      <div class="today-date" id="dateDisplay"></div>
+    </div>
+
+    <div class="section-label">live countdowns</div>
+    <div class="platform-list" id="platformList"></div>
+
+    <div class="section-label">log history · by date</div>
+    <div class="log-list" id="logList"></div>
+
+    <div class="reset-area">
+      <button class="btn-reset" id="resetTodayBtn">reset today</button>
+    </div>
+    <div class="hint">data stays in your browser · midnight auto-saves</div>
+  </div>
+
+  <div class="signature">Vuja Tsoaela</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
